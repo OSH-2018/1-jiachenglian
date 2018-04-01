@@ -96,8 +96,6 @@ sudo gzip --best -c ramdisk > ramdisk.gz
 
 此时系统停在起始状态
 
-![QQ20180401-165048@2x](/Users/lianjiacheng/Downloads/QQ20180401-165048@2x.png)
-
 打开一个新shell，用`gdb`命令启动gdb
 
 ```shell
@@ -115,7 +113,7 @@ Breakpoint 1, start_kernel () at init/main.c:515
 515	{
 ```
 
-![Q20180401-190607@2](/Users/lianjiacheng/Downloads/QQ20180401-190607@2x.png)
+
 
 ```shell
 (gdb) i r											#查看寄存器状态
