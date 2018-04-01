@@ -92,7 +92,7 @@ sudo gzip --best -c ramdisk > ramdisk.gz
 
 ### 2.用gdb调试追踪内核
 
-用qemu启动内核，`qemu-system-x86_64 -kernel ~/linux-4.15.14/arch/x86/boot/bzImage -append "root=/dev/ram0 rw rootfstype=ext4 console=ttyS0 init=/linuxrc" -s -S`
+用qemu启动内核，`qemu-system-x86_64 -kernel ~/linux-4.15.14/arch/x86/boot/bzImage -append "root=/dev/ram0 rw rootfstype=ext4 console=ttyS0 init=/linuxrc" -append nokaslr-s -S`
 
 此时系统停在起始状态
 
